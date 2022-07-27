@@ -1,0 +1,1044 @@
+#header{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: #0000001F;
+    height: 105px;
+    display: block;
+}
+
+.header_item{
+    margin: 30px 64px;
+}
+
+.header_logo{
+    width: 185px;
+    height: 45px;
+    display: inline-block;
+}
+
+.header_logo-img{
+    width: 160px;
+}
+
+.navbar{
+    display: inline-block;
+    padding-left: 40px;
+}
+
+.navbar-list{
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    list-style-type: none;
+}
+
+.navbar-list > li{
+    display: inline-block;
+}
+
+.navbar-list li{
+    position: relative;
+}  
+
+.navbar-list li a{
+    text-decoration: none;
+    color: var(--text-white);
+    display: inline-block;
+} 
+
+.navbar-list > li > a{
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding: 0px 15px;
+    letter-spacing: 2px;
+}
+
+.navbar-list > li:last-child{
+    background-color: #ba71da;
+    padding: 10px 2px 8px;
+    border: 0px solid;
+    border-radius: 20px;
+    margin-left: 22px;
+}
+
+.navbar-list_item:hover .subnav{
+    display: block;
+}
+
+.subnav{
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    list-style: none;
+    min-width: 190px;
+    box-shadow: 0px 2px 5px #f1f1f1;
+    background-color: #fff;
+    display: none;
+}
+
+.subnav::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: -30px;
+    height: 30px;
+}
+
+.subnav_item{
+    padding: 15px 25px;
+}
+
+.subnav_item:hover{
+    background-color: rgba(247, 242, 242, 0.541);
+}
+
+.subnav_item + .subnav_item{
+    border-top: 1px solid #f1f1f1;
+}
+
+.subnav_item-span{
+    float: right;
+    height: 15px;
+    border-radius: 3px;
+    color: var(--text-white);
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 0px 4px;
+    position: relative;
+    bottom: 16px;
+}
+
+.subnav_item-span--hot{
+    background-color: #f76570;
+}
+
+.subnav_item-span--new{
+    background-color: #1bbc9b;
+}
+
+.subnav_item-span--best{
+    background-color: #14b9d5;
+}
+
+.subnav li a{
+    color: #9a9a9a;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    display: block;
+}
+
+.subnav_item:hover .subnav_item-list{
+    display: block;
+}
+
+.subnav_item-list{
+    position: absolute;
+    z-index: 1;
+    top: 1px;
+    left: calc(100% + 24px);
+    list-style: none;
+    min-width: 190px;
+    box-shadow: 0px 2px 5px #f1f1f1;
+    background-color: #fff;
+    display: none;
+}
+
+.subnav_item-list::before{
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 24px;
+    left: -24px;
+}
+
+.subnav_item-list_item{
+    padding: 15px 25px;
+}
+
+.subnav_item-list_item:hover{
+    background-color: rgba(247, 242, 242, 0.541);
+}
+
+.subnav_item-list_item + .subnav_item-list_item{
+    border-top: 1px solid #f1f1f1;
+}
+
+.header_menu{
+    float: right;
+}
+
+.icon_menu{
+    font-size: 2.8rem;
+    color: var(--text-white);
+}
+
+/* Slider */
+.slider{
+    display: block;
+    position: relative;
+    padding-top: 50%;
+    background: url(../img/slider1.jpg) top center / cover no-repeat;
+    animation: opacity 0.5s ease 0;
+    overflow: hidden;
+}
+
+.slider_content{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 280px;
+}
+
+.slider_heading{
+    font-size: 4.6rem;
+    font-weight: 1000;
+    color: var(--text-white);
+}
+
+.slider_sub-heading{
+    margin-top: 60px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: var(--text-white);
+    letter-spacing: 4px;
+}
+
+.slider_with-search{
+    margin-top: 72px;
+}
+
+.slider_search{
+    width: 360px;
+    font-size: 1.6rem;
+    padding: 12px 28px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.slider_search-btn{
+    position: relative;
+    display: inline-block;
+    top: 3px;
+    right: 40px;
+}
+
+.slider-activity{
+    display: flex;
+    width: 100%;
+    margin-top: 70px;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.slider-activity li a{
+    text-decoration: none;
+    color: var(--text-white)
+}
+
+.slider-activity_item{
+    margin: 0 15px;
+    padding: 16px 10px;
+    width: 112px;
+    height: 106px;
+    background-color: rgba(128, 108, 108, 0.3);
+}
+
+.slider-activity_icon{
+    width: 60px;
+    height: 55px;
+    position: relative;
+    top: 5px;
+    left: 16px;
+}
+
+.slider-activity_icon-size{
+    font-size: 3.4rem;
+}
+
+.slider-activity_item-link{
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+/* Destinations */
+
+.places-list{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.place_item{
+    width: 370px;
+    height: 370px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.place_item-place1{
+    background:url(../img/place1.jpg) top center / contain no-repeat;
+}
+
+.place_item-place2{
+    background: url(../img/place2.jpg) top center / contain no-repeat;
+}
+
+.place_item-place3{
+    background: url(../img/place3.jpg) top center / contain no-repeat;
+}
+
+.place_item-place4{
+    background: url(../img/place4.jpg) top center / contain no-repeat;
+}
+
+.place_item-place5{
+    background: url(../img/place5.jpg) top center / contain no-repeat;
+}
+
+.place_item-place6{
+    background: url(../img/place6.jpg) top center / contain no-repeat;
+}
+
+.place_symbolize{
+    margin: 30px;
+}
+
+.place_symbolize-icon{
+    width: 35px;
+    height: 35px;
+}
+
+.place_info{
+    position: absolute;
+    padding-left: 30px;
+    padding-top: 20px;
+    left: 0;
+    bottom: 0;
+    width: 370px;
+    height: 100px;
+    background: linear-gradient(180deg, rgba(124, 120, 120, 0.02), rgba(77, 68, 68, 0.692));
+}
+
+.place_info-name{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.place_quantity-package{
+    margin-top: 12px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+
+.place_item:hover .place_packages{
+    display: block;
+}
+
+.place_packages{
+    position: absolute;
+    top: 0;
+    width: 370px;
+    height: 370px;
+    background-color: #14b9d5;
+    display: none;
+    animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+.place_packages-heading{
+    text-align: center;
+    margin-top: 100px;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--text-white);
+}
+
+.place_packages-list-nation{
+    text-align: center;
+    margin-top: 28px;
+    list-style: none;
+}
+
+.place_package-nation_link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-white);
+    letter-spacing: 1px;
+}
+
+.place_packages-list-nation_item{
+    margin-top: 15px;
+}
+
+.place_packages-btn{
+    margin-top: 28px;
+    width: 180px;
+    border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 34px;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 9px;
+}
+
+.place_packages-btn-link{
+    color: #14b9d5;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.advertise{
+    width: 100%;
+    height: 236px;
+    padding-top: 90px;
+    background: url(../img/advertise.jpg) center / cover no-repeat;
+}
+
+.advertise_content{
+    display: flex;
+    justify-content: space-between;
+    width: 710px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logan{
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 600;
+    margin-right: 80px;
+}
+
+.word2{
+    margin-top: 30px;
+}
+
+.viewallpackages{
+    width: 240px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 14px;
+}
+
+.viewallpackages_btn{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #f76570;
+    letter-spacing: 2px;
+}
+/* Best travel */
+.best-travel{
+    padding: 84px 0;
+    width: 1170px;
+    margin: auto;
+}
+
+.best-travel__info{
+    width: 385px;
+    display: inline-block;
+}
+
+.best-travel_image{
+    width: 815px;
+}
+
+.best-travel_sub-heading{
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    letter-spacing: 2px;
+    color: #aca1a1;
+}
+
+.best-travel_heading{
+    margin-top: 24px;
+    margin-bottom: 8px;
+    font-weight: 1000;
+    font-size: 3.4rem;
+    line-height: 3.4rem;
+    color: #555555;
+    display: block;
+}
+
+.about-text{
+    margin-top: 30px;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    color: #aca1a1;
+    letter-spacing: 1px;
+}
+
+.price_sold{
+    margin-top: 30px;
+}
+
+.price_sold--old{
+    text-decoration: line-through;
+    font-size: 2.8rem;
+    color: #dadcde;
+    margin-right: 5px;
+}
+
+.price_sold--current{
+    font-size: 2.8rem;
+    color: #555555;
+    margin-right: 5px;
+}
+
+.quantity-person{
+    font-size: 1.4rem;
+    color: #5c5858;
+}
+
+.best-travel_book{
+    margin-top: 34px;
+    width: 165px;
+    height: 45px;
+    padding-top: 14px;
+    background-color: #1bbc9b;
+    border-radius: 22px;
+    text-align: center;
+}
+
+.best-travel_book-link{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--text-white);
+    letter-spacing: 1px;
+}
+
+.best-travel_image{
+    position: relative;
+    display: inline-block;
+    width: 750px;
+    height: 410px;
+    background: url(../img/best_travel1.jpg) center / cover no-repeat;
+}
+
+.best-travel_image-time{
+    position: absolute;
+    bottom: -59px;
+    left: 130px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #14b9d5;
+    width: 490px;
+    height: 118px;
+    padding: 28px;
+    color: #fff;
+}
+
+.best-travel_image-time_item{
+    width: 60px;
+}
+
+.best-travel_image-time_item::after{
+    position: absolute;
+    display: none;
+    top: 30px;
+    transform: translateX(80px);
+    content: "/";
+    font-size: 60px;
+    color: #000;
+    opacity: 0.05;
+    font-weight: 400;
+    z-index: 9;
+    line-height: 60px;
+}
+
+.best-travel_image-time_item:not(:last-child)::after{
+    display:block;
+}
+
+.time_numeral{
+    text-align: center;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    display: block;
+}
+
+.time_unit{
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    letter-spacing: 2px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.tour-section{
+    margin-top: 110px;
+}
+
+.tour-section_list{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.tour-section_list-item{
+    display: flex;
+    width: 33.333;
+}
+
+.tour-section_list-item_symbol{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.tour-section_list-item_symbol-image{
+    width: 50px;
+}
+
+.tour-section_list-item_info-name{
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    font-weight: 1000;
+    color: #555555;
+    letter-spacing: 2px;
+}
+
+.tour-section_list-item_info-description{
+    margin: 24px 0;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    color: #aca1a1;
+    letter-spacing: 1px;
+}
+
+.tour-section_list-item_info-link{
+    color: #14b9d5;
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+/* Discover */
+.discover{
+    width: 100%;
+    height: 270px;
+    display: flex;
+}
+
+.discover-style{
+    width: 50%;
+    padding: 60px;
+    color: #fff;
+}
+
+.discover-style_sub-heading{
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.discover-style_heading{
+    margin-top: 18px;
+    margin-bottom: 38px;
+    text-align: center;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    font-weight: 900;
+}
+
+.discover-style_btn{
+    text-align: center;
+    margin: auto;
+    padding-top: 16px;
+    width: 136px;
+    height: 46px;
+    border-radius: 38px;
+    background-color: #fff;
+}
+
+.discover-style_btn-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+.discover-style_btn-link--style1{
+    color:#f3a46b;
+}
+
+.discover-style_btn-link--style2{
+    color:#14b9d5;
+}
+
+.discover-style1{
+    background: url(../img/discover-style1.jpg) center / cover no-repeat;
+}
+
+.discover-style2{
+    background: url(../img/discover-style2.jpg) center / cover no-repeat;
+}
+
+/* Packages */
+.packages{
+    width: 100%;
+}
+
+.packages-places-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.packages-places-list_service{
+    margin: 15px 0;
+    border: 1px solid #f3eeee;
+    width: 370px;
+}
+
+.packages-places-list_service-picture{
+    position: relative;
+}
+
+.pacages-places-list_service-img{
+    width: 368px;
+    height: 232px;
+}
+
+.packages-places-list_service-picture_sym{
+    position: absolute;
+    bottom: -18px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.packages-places-list_service-picture_sym-link{
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px;
+}
+
+.packages-places-list_service-picture_sym-img{
+    width: 26px;
+    height: 26px;
+}
+
+
+.packages-places-list_service-info{
+    padding: 28px;
+}
+
+.packages-places-list_service-info_nation{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f3eeeeee;
+}
+
+.packages-places-list_service-info_nation-link{
+    text-decoration: none;
+}
+
+.packages-places-list_service-info_nation-name{
+    color: #555555;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.icon_location-pin{
+    font-size: 1.2rem;
+    color: #d4cccc;
+}
+
+.packages-places-list_service-info_nation-positon-link{
+    text-decoration: none;
+}
+
+.packages-places-list_service-info_nation-positon{
+    margin-top: 14px;
+    color: #9a9a9a;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+.packages-places-list_service-info_service{
+    padding: 14px 0;
+    border-bottom: 1px solid #f3eeeeee;
+    display: flex;
+    justify-content: space-between;
+}
+
+.packages-places-list_service-info_service-description{
+    flex: 1;
+    font-size: 1.2rem;
+    color: #5a4c56;
+    letter-spacing: 2px;
+    width: 100px;
+    text-decoration: none;
+}
+
+.packages-places-list_service-info_service-description_line1{
+    display: block;
+}
+
+.packages-places-list_service-info_service-description_line2{
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.quantity-service--add{
+    display: inline-block;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    height: 14px;
+    width: 32px;
+    text-align: center;
+    cursor: default;
+}
+
+.primary-service1_color{
+    background-color: #ffd205;
+}
+
+.primary-service2_color{
+    background-color: #f76570;
+}
+
+.primary-service3_color{
+    background-color: #ba71da;
+}
+
+.primary-service1_linearcolor{
+    background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+}
+
+.primary-service2_linearcolor{
+    background: linear-gradient(to right, #f76570 0%, #f78d65 100%);
+}
+
+.primary-service3_linearcolor{
+    background: linear-gradient(to right, #ba71da 0%, #da717b 100%);
+}
+
+.packages-places-list_service-info_service-price{
+    margin-top: 6px;
+}
+
+.packages-places-list_service-info_service-price_old{
+    margin-right: 5px;
+    color: #87888d;
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    text-decoration: line-through;
+    display: inline-block;
+}
+.packages-places-list_service-info_service-price_current{
+    color: #555a74;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.about-service{
+    margin-top: 24px;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    color: #979292;
+    letter-spacing: 1px;
+}
+
+.packages-places-list_service-info_btn{
+    margin-top: 30px;
+    width: 100px;
+    height: 38px;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 11px;
+    letter-spacing: 1px;
+}
+
+.packages-places-list_service-info_btn-link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+/* Footer */
+
+#footer{
+    margin-top: -5px;
+    display: block;
+    padding: 80px 0;
+    background: url(../img/footer_background.jpg) center / cover no-repeat;
+}
+
+.contact-user{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-user_logan{
+    margin-right: 100px;
+}
+
+.contact-user_logan-line1{
+    color: #9a9a9a;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    letter-spacing: 2px;
+}
+
+.contact-user_logan-line2{
+    margin-top: 25px;
+    font-weight: 1000;
+    font-size: 4rem;
+    line-height: 4rem;
+    color: #555555;
+    display: block;
+    letter-spacing: 1px;
+}
+
+.contact-user_info{
+    padding-top: 2.6rem;
+    display: flex;
+    margin-left: 26px;
+}
+
+.contact-user_info-input{
+    width: 260px;
+    height: 46px;
+    border-style: none;
+    border-radius: 34px;
+    outline: none;
+    padding: 24px;
+    color: #aca1a1;
+}
+
+.contact-user_info-send{
+    width: 90px;
+    height: 45px;
+    background-color: #14b9d5;
+    border-radius: 28px;
+    text-align: center;
+    padding-top: 16px;
+    margin-left: 22px;
+}
+
+.contact-user_info-send_link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    letter-spacing: 2px;
+}
+
+.footer_contact{
+    width: 1170px;
+    height: 340px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+.contact{
+    padding: 46px;
+    display: flex;
+    height: 288px;
+}
+
+.contact_description{
+    width: 50%;
+}
+
+.contact_social-network{
+    margin-top: 34px;
+}
+
+.contact_social-network_link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.contact_social-network_link-img{
+    width: 22px;
+    height: 22px;
+}
+
+.contact_cooper-list{
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_cooper-list_item{
+    padding-top: 12px;
+}
+
+.contact_cooper-list_item-tilte{
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: 1000;
+    letter-spacing: 2px;
+    color: #595555;
+}
+
+.nation-list{
+    list-style: none;
+    margin-top: 44px;
+}
+
+.nation-list_item{
+    font-size: 1.5rem;
+    color: #a39f9f;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.arrow_right{
+    font-size: 1rem;
+    margin-right: 4px;
+    color: #d4cccc;
+}
+
+.footer_copyright{
+    background-color: #14b9d5;
+    height: 52px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+
