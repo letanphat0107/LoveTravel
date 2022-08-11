@@ -1,3 +1,4 @@
+
 #header{
     position: absolute;
     z-index: 1;
@@ -5,10 +6,7 @@
     background-color: #0000001F;
     height: 105px;
     display: block;
-}
-
-.header_item{
-    margin: 30px 64px;
+    padding: 30px 64px;
 }
 
 .header_logo{
@@ -169,6 +167,145 @@
 
 .header_menu{
     float: right;
+    cursor: pointer;
+}
+
+.open{
+    display: block !important;
+}
+/*Menu*/
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0px;
+    width: 350px;
+    height: 200vh;
+    background-color: white;
+    padding: 20px !important;
+    border-left: 1px solid #e5e5e7;
+    display: none;
+    animation: toLeft ease-in-out 1s;
+}
+
+@keyframes toLeft {
+    from{
+        opacity: 0;
+        transform: translateX(350px);
+    }to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes toRight {
+    from{
+        opacity: 1;
+        transform: translateX(0);
+    }to{
+        transform: translateX(350px);
+        opacity: 0;
+    }
+}
+
+
+.menu__container{
+    padding: 20px 20px 60px;
+    position: absolute;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.menu__close{
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #87888d;
+    border-radius: 50%;
+    line-height: 30px;
+    font-size: 1.2rem;
+    color: #87888d;
+    text-align: center;
+}
+
+.menu__tour{
+    display: flex;
+    margin-top: 30px;
+}
+
+.menu__tour-image{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.menu__tour-info{
+    margin-left: 15px;
+}
+
+.menu__header .section_heading{
+    margin-top: 14px;
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.menu__tour-btn{
+    margin-top: 18px;
+    width: 130px;
+    height: 30px;
+    border-radius: 15px;
+    border: 0px ;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.background--topic1{
+    background: var(--topic1-color);
+}
+.background--topic2{
+    background: var(--topic2-color);
+}
+.background--topic3{
+    background: var(--topic3-color);
+}
+.background--topic4{
+    background: var(--topic4-color);
+}
+.background--topic5{
+    background: var(--topic5-color);
+}
+.background--topic6{
+    background: var(--topic6-color);
+}
+
+.menu__container .place_item{
+    width: 264px;
+    height: 264px;
+    margin-bottom: 40px;
+}
+
+.menu .place_info{
+    width: 264px;
+}
+
+.menu__container .place_packages{
+    width: 264px;
+    height: 264px;
+}
+
+.menu__container .place_symbolize-icon{
+    margin-top: 30px;
+}
+
+.menu__container .place_packages-heading{
+    margin-top: 50px;
+}
+
+.menu__container .packages-places-list_service-info_nation-name{
+    font-weight: 400;
 }
 
 .icon_menu{
@@ -195,6 +332,8 @@
 
 .slider_heading{
     font-size: 4.6rem;
+    line-height: 4.6rem;
+    letter-spacing: 2px;
     font-weight: 1000;
     color: var(--text-white);
 }
@@ -307,7 +446,10 @@
 }
 
 .place_symbolize{
-    margin: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .place_symbolize-icon{
@@ -413,7 +555,7 @@
 .advertise{
     width: 100%;
     height: 236px;
-    padding-top: 90px;
+    padding-top: 70px;
     background: url(../img/advertise.jpg) center / cover no-repeat;
 }
 
@@ -430,13 +572,11 @@
     font-size: 5rem;
     font-weight: 600;
     margin-right: 80px;
-}
-
-.word2{
-    margin-top: 30px;
+    line-height: 5rem;
 }
 
 .viewallpackages{
+    margin-top: 20px;
     width: 240px;
     height: 45px;
     background-color: #fff;
@@ -554,6 +694,7 @@
 
 .best-travel_image-time_item{
     width: 60px;
+    text-align: center;
 }
 
 .best-travel_image-time_item::after{
@@ -575,7 +716,6 @@
 }
 
 .time_numeral{
-    text-align: center;
     font-size: 3.5rem;
     line-height: 3.5rem;
     display: block;
@@ -586,8 +726,6 @@
     line-height: 1.3rem;
     letter-spacing: 2px;
     display: block;
-    width: 100%;
-    text-align: center;
     margin-top: 8px;
 }
 
@@ -603,7 +741,7 @@
 
 .tour-section_list-item{
     display: flex;
-    width: 33.333;
+    width: 33.333%;
 }
 
 .tour-section_list-item_symbol{
@@ -723,7 +861,7 @@
     position: relative;
 }
 
-.pacages-places-list_service-img{
+.packages-places-list_service-img{
     width: 368px;
     height: 232px;
 }
@@ -902,6 +1040,7 @@
 .contact-user{
     display: flex;
     justify-content: center;
+    margin-left: 7px;
 }
 
 .contact-user_logan{
