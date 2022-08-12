@@ -13,10 +13,8 @@
     width: 185px;
     height: 45px;
     display: inline-block;
-}
-
-.header_logo-img{
-    width: 160px;
+    background: url(../img/logo.png) no-repeat top center;
+    background-size: contain;
 }
 
 .navbar{
@@ -27,7 +25,7 @@
 .navbar-list{
     display: inline-block;
     position: relative;
-    bottom: 10px;
+    bottom: 18px;
     list-style-type: none;
 }
 
@@ -1105,6 +1103,10 @@
     margin-left: auto;
     margin-right: auto;
     background-color: #fff;
+}
+
+.footer_contact .header_logo{
+    background-image: url(../img/logo-color.png);
 }
 
 .contact{
