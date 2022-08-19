@@ -6,12 +6,14 @@
     padding: 0;
 }
 
-html{
+html, body{
+    width: 100%;
     font-size: 62.5%; /* 10px */
     line-height: 1.6rem;
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -23,6 +25,10 @@ html{
     --topic4-color: linear-gradient(to right, #1bbc9b 0%, #1bbc63 100%);
     --topic5-color: linear-gradient(to right, #f3a46b 0%, #f3c96b 100%);
     --topic6-color: linear-gradient(to right, #14b9d5 0%, #14d5b1 100%);
+}
+
+a{
+    text-decoration: none;
 }
 
 .mt-36{
